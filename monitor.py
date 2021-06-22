@@ -32,12 +32,12 @@ if __name__ == "__main__":
         print ("MAX Temperature:", max_temp)
         print ('AVG Temperature:', ave_temp)
         if max_temp < 40:
-            os.system('/root/host_fan_monitor/ipmicfg -fan 2')
+            os.system('/usr/local/bin/ipmicfg -fan 2')
             print ('FAN: Optimal')
         elif max_temp < 60:
-            os.system('/root/host_fan_monitor/ipmicfg -fan 4')
+            os.system('/usr/local/bin/ipmicfg -fan 4')
             print ('FAN: Heavy IO')
         else :
-            os.system('/root/host_fan_monitor/ipmicfg -fan 1')
+            os.system('/usr/local/bin/ipmicfg -fan 1')
             print ('FAN: Full')
         time.sleep(30)

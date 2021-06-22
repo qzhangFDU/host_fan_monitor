@@ -1,3 +1,3 @@
 #!/bin/bash
-python3 /root/host_fan_monitor/monitor.py &
+python3 /usr/local/bin/monitor.py &
 exit 0
